@@ -5,16 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Project portfolio of KGOSI — a live gateway to all GitHub repositories." />
   <title>KGOSI — Project Portfolio</title>
+
   <link rel="preconnect" href="https://api.github.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">🌙</button>
+  <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme"></button>
 
   <header class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
     <div class="hero-inner">
-      <img id="avatar" class="avatar" alt="" src="" width="120" height="120" />
+      <div class="avatar-ring">
+        <img id="avatar" class="avatar" alt="" src="" width="116" height="116" />
+      </div>
       <div class="hero-text">
+        <p id="eyebrow" class="eyebrow">Project Portfolio</p>
         <h1 id="name">Loading…</h1>
         <p id="tagline" class="tagline"></p>
         <p id="meta" class="meta"></p>
@@ -42,7 +50,7 @@
   </main>
 
   <footer class="footer">
-    <p>Built as a live gateway to my GitHub. Updates automatically as I publish new projects.</p>
+    <p>A live gateway to my work — this page updates automatically as I publish new projects.</p>
     <p id="footerName"></p>
   </footer>
 
